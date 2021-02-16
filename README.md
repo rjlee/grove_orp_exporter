@@ -18,10 +18,10 @@ The board used is a <a href="https://wiki.seeedstudio.com/Seeeduino_Lotus_Cortex
 
 Upload the sketch to the board, enssuring you've amended:
 
-`
+```
 #define SSID      "YOUR_AP"
 #define KEY       "YOUR_PASSWORD"
-`
+```
 At this point, it should successully associate with the Wifi and you should be able to see the board output on the 'Serial Monitor'.
 
 ## Configuration
@@ -34,7 +34,7 @@ At this point, it should successully associate with the Wifi and you should be a
 
 The ORP reading can be easily integrated into some assistant using a REST sensor:
 
-`
+```
 sensor:
  - platform: rest
    resource: http://YOURSENSORIPADDRESS/metrics
@@ -42,4 +42,4 @@ sensor:
    unit_of_measurement: "mV"
    timeout: 5
    value_template: '{{ value | regex_findall_index("orp_sensor_value_mv (\d+.\d+)\n") }}'
-`
+```
