@@ -134,8 +134,7 @@ void htmlHeader(String code, String output) {
   contentLength += output.length();
 
   wiflyUart.print("HTTP/1.1 ");
-  wiflyUart.print(code);
-  wiflyUart.print(" OK");
+  wiflyUart.println(code);
   wiflyUart.println("Content-Type: text/html; charset=UTF-8");
   wiflyUart.println(contentLength);
   wiflyUart.println("Connection: close");
@@ -190,18 +189,22 @@ void loop()
           output += "\n";
           output += "# HELP orp_sensor_free_memory Returns the board free memory in Kb\n";
           output += "# TYPE orp_sensor_free_memory gauge\n";
+          output += "orp_sensor_free_memory ";
           output += freeMemory();
           output += "\n";
           output += "# HELP orp_sensor_wifi_associations Returns the number of times the wifi has reassociated\n";
           output += "# TYPE orp_sensor_wifi_associations gauge\n";
+          output += "orp_sensor_wifi_associations ";          
           output += drops;
           output += "\n";
           output += "# HELP orp_sensor_crashes Returns the number of times the board has crashed\n";
-          output += "# TYPE orp_sensor_wifi_crashes gauge\n";
+          output += "# TYPE orp_sensor_crashes gauge\n";
+          output += "orp_sensor_crashes ";
           output += crashes;
           output += "\n";
-          output += "# HELP orp_sensor_uptime Returns the board uptimes in seconds\n";
+          output += "# HELP orp_sensor_uptime Returns the board uptime in seconds\n";
           output += "# TYPE orp_sensor_uptime gauge\n";
+          output += "orp_sensor_uptime ";
           output += TotalSeconds;
           output += "\n";
           output += "# UPTIME (DD:HH:MM:SS) ";
@@ -209,7 +212,7 @@ void loop()
           output += "\n";
           htmlHeader("200 OK", output);
         } else {
-          htmlHeader("404", "<html><body>Sensor Disabled</body></html>");
+          htmlHeader("404 Not Found", "<html><body>Sensor Disabled</body></html>");
         }
       } else if (response.indexOf("GET /enable") > 0) {
         enabled = true;
@@ -227,7 +230,7 @@ void loop()
         String output = "";
         output += "<html><body><ul><li><a href='/metrics'>/metrics</a></li></ul></body></html>";
         Serial.println(output);
-        htmlHeader("404", output);
+        htmlHeader("404 Not Found", output);
       }
 
     } else if (response.indexOf("CLOS*") > 0) {
