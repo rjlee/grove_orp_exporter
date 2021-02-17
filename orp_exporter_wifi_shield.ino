@@ -170,7 +170,8 @@ void loop()
     if (response.indexOf("OPEN*")) {
 
       delay(1000); // delay enough time for the browser to complete sending its HTTP request string
-
+      
+      String output = "";
       if (response.indexOf("GET /metrics") > 0) {
 
         // Only return a 200 OK if sensor is enabled
@@ -181,7 +182,6 @@ void loop()
             delay(200);
           }
           // Output in prometheus compatible format, including the uptime as a comment
-          String output = "";
           output += "# HELP orp_sensor_value_mv Returns the sensor value from the ORP sensor in mV\n";
           output += "# TYPE orp_sensor_value_mv gauge\n";
           output += "orp_sensor_value_mv ";
@@ -212,27 +212,22 @@ void loop()
           output += "\n";
           htmlHeader("200 OK", output);
         } else {
-          htmlHeader("404 Not Found", "<html><body>Sensor Disabled</body></html>");
+          output = "<html><body>Sensor Disabled</body></html>";
+          htmlHeader("404 Not Found", output);
         }
       } else if (response.indexOf("GET /enable") > 0) {
         enabled = true;
-        String output = "";
-        output += "<html><body>Sensor Enabled</body></html>";
-        Serial.println(output);
+        output = "<html><body>Sensor Enabled</body></html>";
         htmlHeader("200 OK", output);
       } else if (response.indexOf("GET /disable") > 0) {
         enabled = false;
-        String output = "";
-        output += "<html><body>Sensor Disabled</body></html>";
-        Serial.println(output);
+        output = "<html><body>Sensor Disabled</body></html>";
         htmlHeader("200 OK", output);
       } else {
-        String output = "";
-        output += "<html><body><ul><li><a href='/metrics'>/metrics</a></li></ul></body></html>";
-        Serial.println(output);
+        output = "<html><body><ul><li><a href='/metrics'>/metrics</a></li></ul></body></html>";
         htmlHeader("404 Not Found", output);
       }
-
+      Serial.println(output);
     } else if (response.indexOf("CLOS*") > 0) {
       // Ack connection close
     } else if (response.indexOf("isconn") > 0 || response.indexOf("AUTH-ERR") > 0) {
