@@ -39,6 +39,8 @@ The <a href="https://wiki.seeedstudio.com/Grove-ORP-Sensor-kit/">Grove ORP senso
 
 `#define OFFSET -42      //add your value here`
 
+You can then use <a href="https://www.amazon.co.uk/gp/product/B001EHAZ12">callibration solution</a> to check the sensor is measuring accurately.
+
 ## Usage
 
 The software exposes three endpoints:
