@@ -93,7 +93,5 @@ sensor:
 
 ## Notes on the build
 
-* The Wifi shield is expensive, a better choice is probably <a href="https://wiki.seeedstudio.com/Grove-UART_Wifi_V2/">Seeed UART Wifi V2</a>.
-* Similarly a Pi Pico and Grove shield might be a better board choice.
 * The wifi shield does crash from time to time, but is recovered in the sketch.
 * It should be trivial to add a <a href="https://wiki.seeedstudio.com/Grove-PH-Sensor-kit/">Grove PH sensor</a>.
