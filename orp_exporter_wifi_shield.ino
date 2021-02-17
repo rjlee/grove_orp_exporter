@@ -167,7 +167,7 @@ void loop()
     }
     Serial.println(response);
 
-    if (response.indexOf("OPEN*")) {
+    if (response.indexOf("OPEN*") > 0) {
 
       delay(1000); // delay enough time for the browser to complete sending its HTTP request string
       
