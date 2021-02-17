@@ -31,10 +31,12 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 * <a href="https://www.ebay.co.uk/itm/BNC-Coupler-Adapter-Insulated-Female-To-Female-Panel-Mount/124401372551">BNC Coupler Adapter Insulated Female To Female Panel Mount</a> - £3.99
 * <a href="https://www.ebay.co.uk/itm/Micro-USB-Type-B-Male-To-Micro-B-Male-5Pin-OTG-Adapter-Converter-Lead-Data-Cable/133524877040">Micro USB Type B Male To Micro B Male 5Pin OTG Adapter Converter Lead Data Cable</a> - £2.99
 * <a href="https://www.ebay.co.uk/itm/BNC-male-to-BNC-male-pigtail-coax-cable-RG316-30cm-089/233586599610">BNC male to BNC male pigtail coax cable RG316 30cm 089</a> - £4.45
+* <a href="https://cpc.farnell.com/pro-signal/psg91431/lead-usb2-0-a-male-a-male-grey/dp/CS30626">USB 2.0 A Male to A Male Cable, 5m Grey</a> - £2.50
+* <a href="https://www.amazon.co.uk/SLTX-Charger-Adapter-1000mAh-Universal/dp/B07CZGLHZ6">3 Pin Plug USB Mains Charger Adapter, 1AMP</a> - £7.79
 
-Total Cost = £135.
+Total Cost = £145.
 
-The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlas Scientific Pool Kit</a> at $280 USD, but that is IP64 rated.
+The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlas Scientific Pool Kit</a> at $280 USD, but that is IP64 rated and has a PH sensor as well.
 
 ## Software Installation
 
