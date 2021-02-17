@@ -43,3 +43,5 @@ Job done.
 
 * At time of purchase, I would rather have bought a Mirco-USB panel adaptor, but they were sold out.  Get one of these if they are in stock and then you can use a sealed Micro-usb power supply to the unit.  <a href="https://thepihut.com/products/micro-usb-b-jack-to-usb-a-plug-round-panel-mount-adapter">Micro USB panel adaptor</a>.
 * The ORP sensor board has a tiny screww hole, so it's not fastened in the box as I couldn't find a screw to accomodate it.
+* The Wifi shield is expensive, a better choice is probably <a href="https://wiki.seeedstudio.com/Grove-UART_Wifi_V2/">Seeed UART Wifi V2</a>.
+* Similarly a Pi Pico and Grove shield might be a better board choice.
