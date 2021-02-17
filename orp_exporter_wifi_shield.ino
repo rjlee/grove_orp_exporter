@@ -129,13 +129,15 @@ void connectToWifi()
   Serial.println("------Web server ready------");
 }
 
-void htmlHeader(String code, String output) {
+void htmlHeader(String code, String contentType, String output) {
   String contentLength = "Content-Length: ";
   contentLength += output.length();
 
   wiflyUart.print("HTTP/1.1 ");
   wiflyUart.println(code);
-  wiflyUart.println("Content-Type: text/html; charset=UTF-8");
+  wiflyUart.print("Content-Type: ");
+  wiflyUart.print(contentType);
+  wiflyUart.println("; charset=UTF-8");
   wiflyUart.println(contentLength);
   wiflyUart.println("Connection: close");
   wiflyUart.println();
@@ -210,22 +212,22 @@ void loop()
           output += "# UPTIME (DD:HH:MM:SS) ";
           output += returnUptime();
           output += "\n";
-          htmlHeader("200 OK", output);
+          htmlHeader("200 OK", "text/plain", output);
         } else {
           output = "<html><body>Sensor Disabled</body></html>";
-          htmlHeader("404 Not Found", output);
+          htmlHeader("404 Not Found", "text/html", output);
         }
       } else if (response.indexOf("GET /enable") > 0) {
         enabled = true;
         output = "<html><body>Sensor Enabled</body></html>";
-        htmlHeader("200 OK", output);
+        htmlHeader("200 OK", "text/html", output);
       } else if (response.indexOf("GET /disable") > 0) {
         enabled = false;
         output = "<html><body>Sensor Disabled</body></html>";
-        htmlHeader("200 OK", output);
+        htmlHeader("200 OK", "text/html", output);
       } else {
         output = "<html><body><ul><li><a href='/metrics'>/metrics</a></li></ul></body></html>";
-        htmlHeader("404 Not Found", output);
+        htmlHeader("404 Not Found", "text/html", output);
       }
       Serial.println(output);
     } else if (response.indexOf("CLOS*") > 0) {
