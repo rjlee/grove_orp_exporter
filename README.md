@@ -34,7 +34,7 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 
 Total Cost = £135.
 
-The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlas Scientific Pool Kit</a> at $280 USD.
+The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlas Scientific Pool Kit</a> at $280 USD, but that is IP64 rated.
 
 ## Software Installation
 
