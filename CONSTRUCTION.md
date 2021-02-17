@@ -26,6 +26,10 @@ The lowest cost equivalent I could find was <a href="https://atlas-scientific.co
 
 ## Assembly
 
+| | | |
+| - | - | - |
+| <img src="BOARD1.png"> | <img src="BOARD2.png"> | <img src="SENSOR.png"> |
+
 Assemble the sensor:
 * Attach the ORP sensor to the Seeduino using a Grove cable (into A1)
 * Push the shield into the haders onto the Seeduino, taking care to feed the grove cable for the ORP sensor between the sheild and board
