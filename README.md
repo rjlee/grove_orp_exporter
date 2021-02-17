@@ -22,7 +22,7 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 *Bill of Materials*
 
 * <a href="https://www.amazon.co.uk/gp/product/B07Q4QDM11">Seeeduino Lotus Cortex-M0+</a> - £14.57
-* <a href="https://cpc.farnell.com/seeed-studio/113030008/wifi-shield-v2-for-arduino/dp/SC14531">Seeed Wifi Shield V2.0</a> - £32.24
+* <a href="https://cpc.farnell.com/seeed-studio/113030008/wifi-shield-v2-for-arduino/dp/SC14531">Seeed Wifi Shield V2.0</a> - £38.69
 * <a href="https://coolcomponents.co.uk/products/grove-oxidation-reduction-potential-orp-sensor-kit-501z">Grove - Oxidation Reduction Potential (ORP) Sensor Kit</a> - £45.99
 * <a href="https://www.amazon.co.uk/gp/product/B07NVRDG1V">Junction Box with Grommets Waterproof IP56</a> - £7.55
 * <a href="https://www.amazon.co.uk/gp/product/B001EHAZ12">American Marine Pinpoint ORP / REDOX Calibration Fluid</a> - £7.99
@@ -32,7 +32,7 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 * <a href="https://www.ebay.co.uk/itm/Micro-USB-Type-B-Male-To-Micro-B-Male-5Pin-OTG-Adapter-Converter-Lead-Data-Cable/133524877040">Micro USB Type B Male To Micro B Male 5Pin OTG Adapter Converter Lead Data Cable</a> - £2.99
 * <a href="https://www.ebay.co.uk/itm/BNC-male-to-BNC-male-pigtail-coax-cable-RG316-30cm-089/233586599610">BNC male to BNC male pigtail coax cable RG316 30cm 089</a> - £4.45
 
-Total Cost = £130.
+Total Cost = £135.
 
 The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlas Scientific Pool Kit</a> at $280 USD.
 
