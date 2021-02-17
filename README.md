@@ -15,7 +15,11 @@ At it's heart it uses a <a href="https://wiki.seeedstudio.com/Grove-ORP-Sensor-k
 
 ## Construction
 
-### BOM
+Be easy to assemble - no soldering, no drilling.
+
+You'll only need a craft knife to assemble the housing, the Gromits on the listed case are rubber, so you can cut into them easily to add the ingress for the respective cables.
+
+### Bill of Materials
 
 * <a href="https://cpc.farnell.com/seeed-studio/102020001/seeeduino-lotus-arduino-grove/dp/SC14515">Seeeduino Lotus Cortex-M0+</a> - £14.57
 * <a href="https://cpc.farnell.com/seeed-studio/113030008/wifi-shield-v2-for-arduino/dp/SC14531/">Seeed Wifi Shield V2.0</a> - £32.24
