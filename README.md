@@ -21,7 +21,7 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 
 *Bill of Materials*
 
-* <a href="https://cpc.farnell.com/seeed-studio/102020001/seeeduino-lotus-arduino-grove/dp/SC14515">Seeeduino Lotus Cortex-M0+</a> - £14.57
+* <a href="https://www.amazon.co.uk/gp/product/B07Q4QDM11">Seeeduino Lotus Cortex-M0+</a> - £14.57
 * <a href="https://cpc.farnell.com/seeed-studio/113030008/wifi-shield-v2-for-arduino/dp/SC14531/">Seeed Wifi Shield V2.0</a> - £32.24
 * <a href="https://coolcomponents.co.uk/products/grove-oxidation-reduction-potential-orp-sensor-kit-501z">Grove - Oxidation Reduction Potential (ORP) Sensor Kit</a> - £45.99
 * <a href="https://www.amazon.co.uk/gp/product/B07NVRDG1V">Junction Box with Grommets Waterproof IP56</a> - £7.55
