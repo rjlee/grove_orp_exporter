@@ -13,7 +13,9 @@ This project provides a simple to assemble ORP (Oxidation Reduction Potential) m
 
 At it's heart it uses a <a href="https://wiki.seeedstudio.com/Grove-ORP-Sensor-kit/">Grove ORP sensor kit</a>.
 
--IMAGES-
+| | | |
+| - | - | - |
+| <img src="BOARD1.png"> | <img src="BOARD2.png"> | <img src="SENSOR.png"> |
 
 See <a href="/CONSTRUCTION.md">CONSTRUCTION</a> for assembly instructions.
 
