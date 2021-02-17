@@ -28,6 +28,7 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 * <a href="https://www.amazon.co.uk/gp/product/B001EHAZ12">American Marine Pinpoint ORP / REDOX Calibration Fluid</a> - £7.99
 * <a href="https://www.amazon.co.uk/gp/product/B08FW5BQT3">M3 A2 Stainless Steel Pozi Countersunk Machine Pozi CSK Screws Bolts</a> - £5.44
 * <a href="https://thepihut.com/products/usb-a-jack-to-micro-usb-b-jack-round-panel-mount-adapter">USB A Jack to Micro USB B Jack Round Panel Mount Adapter</a> - £5.50
+* <a href="https://www.ebay.co.uk/itm/BNC-Coupler-Adapter-Insulated-Female-To-Female-Panel-Mount/124401372551">BNC Coupler Adapter Insulated Female To Female Panel Mount</a> - £3.99
 
 ## Software Installation
 
