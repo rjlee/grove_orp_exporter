@@ -52,6 +52,38 @@ The <a href="https://wiki.seeedstudio.com/Grove-ORP-Sensor-kit/">Grove ORP senso
 
 ## Usage
 
+The software exposes three endpoints:
+
+| Endpoint | Usage |
+| -------- | ----- |
+| `/metrics` | Exposes the ORP reading in prometheus exporter format |
+| `/enable` | Enables readings to be taken (default) |
+| `/disable` | Disables readings, causing the `/metrics` endpoint to 404 |
+
+### /metrics
+
+This endpoint returns metrics that can be integrated into Grafana:
+
+```
+# TYPE orp_sensor_value_mv gauge
+orp_sensor_value_mv 367.20
+# HELP orp_sensor_free_memory Returns the board free memory in Kb
+# TYPE orp_sensor_free_memory gauge
+orp_sensor_free_memory 24351
+# HELP orp_sensor_wifi_associations Returns the number of times the wifi has reassociated
+# TYPE orp_sensor_wifi_associations gauge
+orp_sensor_wifi_associations 0
+# HELP orp_sensor_crashes Returns the number of times the board has crashed
+# TYPE orp_sensor_crashes gauge
+orp_sensor_crashes 0
+# HELP orp_sensor_uptime Returns the board uptime in seconds
+# TYPE orp_sensor_uptime gauge
+orp_sensor_uptime 24
+# UPTIME (DD:HH:MM:SS) 00:00:00:24
+```
+### /enable | /disable
+
+These endpoints can be used to stop the ORP sensor from taking readings and cause the `/metrics` endpoint to return a 404 when set to disabled.  This can be used in an automation to stop readings if the probe is removed from the water (e.g. if the Hot Tub is turned on).
 
 ## Integration into Home Assistant
 
