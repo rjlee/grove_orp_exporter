@@ -1,6 +1,6 @@
 # grove_orp_exporter
 
-Arduino based grove ORP prometheus exporter, that can be easily integrated into home assistant.  It allows you to remotely measure the ORP value of your pool or hot tub, providing a good indicator of water quality.  See <a href="https://blog.jencoi.com/what-is-orp-in-water-testing">what is orp in water testing ?</a> for further details.
+Arduino based grove ORP prometheus exporter, that can be easily integrated into home assistant.  It allows you to remotely measure the ORP value of your pool or hot tub, providing a good indicator of water quality.  See <a href="https://blog.jencoi.com/what-is-orp-in-water-testing">what is orp in water testing</a> for further details.
 
 ## Introduction
 
