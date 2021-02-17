@@ -34,6 +34,8 @@ You'll only need a craft knife to assemble the housing, the Gromits on the liste
 
 Total Cost = £130.
 
+The lowest cost equivalent I could find was <a href="https://atlas-scientific.com/kits/wi-fi-pool-kit/">Atlast Scientific Pool Kit</a> at $280 USD.
+
 ## Software Installation
 
 The board used is a <a href="https://wiki.seeedstudio.com/Seeeduino_Lotus_Cortex-M0-/">Seeeduino Lotus Cortex-M0+</a>.  Follow the board setup instructions on the page to configure the board in the Arduino environment.
