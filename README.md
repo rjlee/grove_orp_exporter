@@ -56,21 +56,22 @@ The software exposes three endpoints:
 This endpoint returns metrics that can be integrated into Grafana:
 
 ```
+# HELP orp_sensor_value_mv Returns the sensor value from the ORP sensor in mV
 # TYPE orp_sensor_value_mv gauge
-orp_sensor_value_mv 367.20
+orp_sensor_value_mv 215.83
 # HELP orp_sensor_free_memory Returns the board free memory in Kb
 # TYPE orp_sensor_free_memory gauge
-orp_sensor_free_memory 24351
+orp_sensor_free_memory 24607
 # HELP orp_sensor_wifi_associations Returns the number of times the wifi has reassociated
 # TYPE orp_sensor_wifi_associations gauge
 orp_sensor_wifi_associations 0
 # HELP orp_sensor_crashes Returns the number of times the board has crashed
 # TYPE orp_sensor_crashes gauge
-orp_sensor_crashes 0
+orp_sensor_crashes 1
 # HELP orp_sensor_uptime Returns the board uptime in seconds
 # TYPE orp_sensor_uptime gauge
-orp_sensor_uptime 24
-# UPTIME (DD:HH:MM:SS) 00:00:00:24
+orp_sensor_uptime 3867
+# UPTIME (DD:HH:MM:SS) 00:01:04:27
 ```
 ### /enable | /disable
 
@@ -78,7 +79,7 @@ These endpoints can be used to stop the ORP sensor from taking readings and caus
 
 ## Integration into Home Assistant
 
-The ORP reading can be easily integrated into some assistant using a REST sensor:
+The ORP reading can be easily integrated into home assistant using a REST sensor:
 
 ```
 sensor:
@@ -90,7 +91,7 @@ sensor:
    value_template: '{{ value | regex_findall_index("orp_sensor_value_mv (\d+.\d+)\n") }}'
 ```
 
-## Notes
+## Notes on the build
 
 * The Wifi shield is expensive, a better choice is probably <a href="https://wiki.seeedstudio.com/Grove-UART_Wifi_V2/">Seeed UART Wifi V2</a>.
 * Similarly a Pi Pico and Grove shield might be a better board choice.
